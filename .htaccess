@@ -1,0 +1,16 @@
+php_flag display_errors 1
+php_value upload_max_filesize 40M
+php_value post_max_size 42M
+php_value max_execution_time 960
+php_value memory_limit 2048M
+
+RewriteEngine On
+Options All -Indexes
+
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-l
+
+RewriteCond $1 !^(webroot|language|views|bootstrap|tests|images|js|css|fonts|favicon\.ico|robots\.txt|index\.php) [NC]
+
+RewriteRule ^(.+)$ index.php?var=$1 [QSA,L]

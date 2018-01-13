@@ -1,0 +1,23 @@
+Import Data
+- DigiTrak Information
+- Sim Activation
+
+Customer
+- Customer ID (auto_increment)
+- First, Last Name
+- Address1
+- Address 1
+- Telephone Home, Work, Cell 1, Cell 2
+- Email 
+- Fleet Orb Number
+- Vehicle Description (Color, Make)
+
+Report
+- Customer ID
+- Vehicle Description
+
+1.       We need a clear option for imei upload from excel sheet
+2.       There should not be a delete option, the system should be designed to re-assign imei numbers not to delete them.
+3.       We need to provide Data for Sim Activation and Digitrak for you to populate the system for proper testing, please note that I will seek assistance to export Digitrak this week so that I can provide this information.
+4.       IMEI should be the main link, not the DNumber which is subject to change
+5.       There should be a link between the technical table and device table.
